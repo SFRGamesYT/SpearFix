@@ -9,7 +9,6 @@ import net.minecraft.entity.mob.AbstractPiglinEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.text.Text;
 
 import java.util.ArrayList;
 
@@ -31,8 +30,6 @@ public class Spearfix implements ModInitializer {
                 if(living.isRemoved()) continue;
                 if (living.getEquippedStack(EquipmentSlot.MAINHAND).isIn(ItemTags.SPEARS)) {
                     living.equipStack(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
-                    System.out.println("SPEAR REMOVED");
-                    server.getPlayerManager().broadcast(Text.literal("SPEAR REMOVED"),true);
                 }
             }
             bozosMaybe.clear();
