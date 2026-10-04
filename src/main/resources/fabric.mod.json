@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "spearfix",
+  "version": "${version}",
+  "name": "SpearFix",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/spearfix/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "sfr.spearfix.client.SpearfixClient"
+    ],
+    "main": [
+      "sfr.spearfix.Spearfix"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
